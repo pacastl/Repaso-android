@@ -1,0 +1,41 @@
+<resources>
+
+<!--    IMC APP-->
+    <string name="app_name">AndroidMaster</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+    <string name="recalculate">Volver a calcular</string>
+    <string name="result">Tu resultado</string>
+    <string name="error">Error</string>
+
+    <string name="title_bajo_peso">Bajo peso </string>
+    <string name="description_peso_normal">Estás por debajo de lo óptimo para tu peso y altura.</string>
+
+    <string name="title_normal_peso">Bajo peso </string>
+    <string name="description_bajo_peso">Estás en lo óptimo para tu peso y altura.</string>
+
+    <string name="title_sobrepeso">Bajo peso </string>
+    <string name="description_sobrepeso">Estás por encima de lo óptimo para tu peso y altura.</string>
+
+    <string name="title_obesidad">Bajo peso </string>
+    <string name="description_obesidad">Estás muy por encima de lo óptimo para tu peso y altura.</string>
+
+<!--    Todo App-->
+    <string name="todo_title">Bienvenido usuario</string>
+    <string name="todo_category">Categorías:</string>
+    <string name="todo_tasks">Tareas</string>
+
+    <string name="todo_dialog_add_task">Añade la tarea</string>
+    <string name="todo_dialog_category_business">Negocios</string>
+    <string name="todo_dialog_category_other">Otros</string>
+    <string name="todo_dialog_category_personal">Personal</string>
+    <string name="todo_dialog_add_task_button">Crear tarea</string>
+
+
+
+
+</resources>
