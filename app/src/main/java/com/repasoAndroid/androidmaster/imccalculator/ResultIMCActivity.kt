@@ -33,39 +33,33 @@ class ResultIMCActivity : AppCompatActivity() {
     }
 
     private fun initUI(result: Double) {
-        tvIMC.text=result.toString()
+        tvIMC.text = result.toString()
         when(result){
-            in 0.00..18.50->{ //Bajo peso
-                tvResult.text=getString(R.string.title_bajo_peso)
-                tvResult.setTextColor(ContextCompat.getColor(this,R.color.peso_bajo))
-                tvDescription.text=getString(R.string.description_bajo_peso)
+            in 0.00..18.50 -> { //Bajo peso
+                tvResult.text = getString(R.string.title_bajo_peso)
+                tvResult.setTextColor(ContextCompat.getColor(this, R.color.peso_bajo))
+                tvDescription.text = getString(R.string.description_bajo_peso)
             }
-            in 18.51..24.99->{ //Peso normal
-
-                tvResult.text=getString(R.string.title_normal_peso)
-                tvResult.setTextColor(ContextCompat.getColor(this,R.color.peso_normal))
-
-                tvDescription.text=getString(R.string.description_peso_normal)
+            in 18.51..24.99 -> { //Peso normal
+                tvResult.text = getString(R.string.title_normal_peso)
+                tvResult.setTextColor(ContextCompat.getColor(this, R.color.peso_normal))
+                tvDescription.text = getString(R.string.description_peso_normal)
             }
-            in 25.00..29.99->{ //Sobrepeso
-
-                tvResult.text=getString(R.string.title_sobrepeso)
-                tvResult.setTextColor(ContextCompat.getColor(this,R.color.peso_sobrepeso))
-
-                tvDescription.text=getString(R.string.description_sobrepeso)
+            in 25.00..29.99 -> { //Sobrepeso
+                tvResult.text = getString(R.string.title_sobrepeso)
+                tvResult.setTextColor(ContextCompat.getColor(this, R.color.peso_sobrepeso))
+                tvDescription.text = getString(R.string.description_sobrepeso)
             }
-            in 30.00..99.00->{ //Obesidad
-
-                tvResult.text=getString(R.string.title_obesidad)
-                tvResult.setTextColor(ContextCompat.getColor(this,R.color.obesidad))
-
-                tvDescription.text=getString(R.string.description_obesidad)
+            in 30.00..99.00 -> { //Obesidad
+                tvResult.text = getString(R.string.title_obesidad)
+                tvResult.setTextColor(ContextCompat.getColor(this, R.color.obesidad))
+                tvDescription.text = getString(R.string.description_obesidad)
             }
-            else->{ //error
-                tvIMC.text=getString(R.string.error)
-                tvResult.text=getString(R.string.error)
-                tvResult.setTextColor(ContextCompat.getColor(this,R.color.obesidad))
-                tvDescription.text=getString(R.string.error)
+            else -> {//error
+                tvIMC.text = getString(R.string.error)
+                tvResult.text = getString(R.string.error)
+                tvResult.setTextColor(ContextCompat.getColor(this, R.color.obesidad))
+                tvDescription.text = getString(R.string.error)
             }
         }
     }

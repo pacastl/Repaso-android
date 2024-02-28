@@ -12,13 +12,15 @@
         android:id="@+id/tvTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:text="@string/result"/>
+        android:text="@string/result"
+        />
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -44,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="26sp"
                 android:textStyle="bold"
-                tools:text="Normal"/>
+                tools:text="Normal"
+                />
 
             <TextView
                 android:id="@+id/tvIMC"
@@ -62,7 +65,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="26sp"
                 android:textColor="@color/white"
-                tools:text="Normal"/>
+                tools:text="Normal"
+                />
 
 
 

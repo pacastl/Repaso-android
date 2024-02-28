@@ -11,25 +11,24 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.repasoAndroid.androidmaster.R
+//para que no haga falta poner TaskCategory.
+import com.repasoAndroid.androidmaster.todoapp.TaskCategory.*
 
 class TodoActivity : AppCompatActivity() {
 
     private val categories = listOf(
-        TaskCategory.Business,
-        TaskCategory.Personal,
-        TaskCategory.Other
-
+        Business,
+        Personal,
+        Other
     )
 
 //    Este tipo de lista permite modifcar sus elementos. Cuando lo modificamos le decimos
 //    al adapter que ha habido cambios y los pinta
 
     private val tasks = mutableListOf(
-        Task("PruenaBusiness", TaskCategory.Business),
-        Task("PruenaPersonal", TaskCategory.Business),
-        Task("PruenaOther", TaskCategory.Business)
-
-
+        Task("PruebaBusiness", Business),
+        Task("PruebaPersonal", Personal),
+        Task("PruebaOther", Other)
     )
     private lateinit var rvCategories: RecyclerView
     private lateinit var categoriesAdapter: CategoriesAdapter
@@ -119,6 +118,7 @@ class TodoActivity : AppCompatActivity() {
     private fun updateCategories(position: Int) {
         categories[position].isSelected = !categories[position].isSelected
         categoriesAdapter.notifyItemChanged(position)
+        updateTasks()
     }
 
     //    Para avisar al adaptador del cambio en las tareas y que lo muestre
