@@ -68,9 +68,9 @@ class TodoActivity : AppCompatActivity() {
                 val selectedId = rgCategories.checkedRadioButtonId
                 val selectedRadioButton: RadioButton = rgCategories.findViewById(selectedId)
                 val currentCategory: TaskCategory = when (selectedRadioButton.text) {
-                    getString(R.string.todo_dialog_category_business) -> TaskCategory.Business
-                    getString(R.string.todo_dialog_category_personal) -> TaskCategory.Personal
-                    else -> TaskCategory.Other
+                    getString(R.string.todo_dialog_category_business) -> Business
+                    getString(R.string.todo_dialog_category_personal) -> Personal
+                    else -> Other
                 }
 
 //            Añadimos una nueva tarea pasandole el texto del editText y la categoría
