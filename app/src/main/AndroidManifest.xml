@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Damos permiso para acceder a internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,9 +15,15 @@
         android:theme="@style/Theme.AndroidMaster"
         tools:targetApi="31">
         <activity
-            android:name=".todoapp.TodoActivity"
-            android:theme="@style/Theme.TODOApp"
+            android:name=".superheroapp.DetailSuperheroActivity"
             android:exported="false" />
+        <activity
+            android:name=".superheroapp.SuperHeroListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".todoapp.TodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TODOApp" />
         <activity
             android:name=".imccalculator.ResultIMCActivity"
             android:exported="false" />
