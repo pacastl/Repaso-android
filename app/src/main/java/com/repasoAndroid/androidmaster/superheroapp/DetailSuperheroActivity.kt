@@ -68,9 +68,18 @@ class DetailSuperheroActivity : AppCompatActivity() {
 
     private fun updateHeight(view: View, stat: String) {
         //        params son los parámetros de la vista/componente
-        val params = view.layoutParams
-        params.height = pxToDp(stat.toFloat())
-        view.layoutParams = params
+//        En algunos casos falla y puede ser porque algún valor devuelto es null
+        if (stat != "null") {
+            val params = view.layoutParams
+            params.height = pxToDp(stat.toFloat())
+            view.layoutParams = params
+        } else {
+            // Handle the case where stat is "null", perhaps by setting a default value or hiding the view
+            // For example, setting the view height to 0 or some default value
+            val params = view.layoutParams
+            params.height = 0 // or some default value
+            view.layoutParams = params
+        }
     }
 
     //    Para que las barras de las estadísticas tengan un tamaño acorde a su valor hay

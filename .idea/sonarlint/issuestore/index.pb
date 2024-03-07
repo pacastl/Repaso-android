@@ -3064,3 +3064,7 @@ Q.idea/sonarlint/securityhotspotstore/b/b/bb7939d7c89989caae6b9d8ad1943fe03ce3e1
 Q.idea/sonarlint/securityhotspotstore/b/b/bb65530358544b31386bf5ded0875253f78be4e5,e/5/e50757f3a198c0a3a4b04f04f85b0ae5ebbad555
 Å
 Q.idea/sonarlint/securityhotspotstore/d/9/d9b5cd5977ebe3099f60904aaf78a34ee478cc51,a/f/afb34475450d1bd17f6921021b7b6dfa994fafd6
+~
+Napp/src/main/java/com/repasoAndroid/androidmaster/settings/SettingsActivity.kt,1/b/1b1f454a106eb10ca0d7638617362f9ebd541bfb
+{
+Kapp/src/main/java/com/repasoAndroid/androidmaster/settings/SettingsModel.kt,3/2/32b3bc4ae9cb53adf034f98a4d0a71952fb5027f
